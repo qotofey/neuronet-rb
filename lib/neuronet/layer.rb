@@ -1,0 +1,2 @@
+class Neuronet::Layer
+end
