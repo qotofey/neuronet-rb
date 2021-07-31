@@ -1,4 +1,5 @@
+# frozen_string_literal: true
+
 require 'lib/neuronet'
 
-net = Neuronet.new
 puts 'hello world'
