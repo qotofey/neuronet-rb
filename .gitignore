@@ -5,3 +5,5 @@
 /.vegrant
 
 .DS_Store
+
+.rbenv-gemsets
