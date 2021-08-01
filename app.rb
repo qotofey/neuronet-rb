@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-require 'lib/neuronet'
+require_relative 'lib/neuronet'
 
-puts 'hello world'
+puts Neuronet.new(3, 2).inputs_count
