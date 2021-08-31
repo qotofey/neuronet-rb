@@ -15,7 +15,7 @@ module Neuronet
       raise 'stub!'
     end
 
-    def predict
+    def predict(inputs)
       raise 'stub!'
     end
   end

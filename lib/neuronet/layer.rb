@@ -13,12 +13,14 @@ module Neuronet
       @weights = generate_weights_matrix(inputs_count, outputs_count)
     end
 
-    def predict; end
+    def predict(inputs)
+      Neuronet::Facades::MatrixFacade.mult(inputs * weights)
+    end
 
     protected
 
     def generate_weights_matrix(inputs_count, outputs_count)
-      Matrix.build(inputs_count, outputs_count) { rand(-1.0..1.0) }
+      Neuronet::Facades::MatrixFacade.generate_matrix(inputs_count, outputs_count)
     end
   end
 end

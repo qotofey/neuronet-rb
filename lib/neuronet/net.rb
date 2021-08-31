@@ -11,13 +11,13 @@ module Neuronet
       @layers_count = layers_count
     end
 
-    def predict; end
+    def predict(inputs); end
 
     # Метод предназначен для обучения существующей ИНС
     def learn(training_sample, epochs, bias = 0, acceptable_error = 0.3, learning_rate = 0.00125); end
 
     private
 
-    def learn_iter; end
+    def learn_iter(inputs, expected); end
   end
 end
