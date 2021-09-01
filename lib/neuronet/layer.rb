@@ -5,7 +5,7 @@ require 'matrix'
 
 module Neuronet
   class Layer < Base
-    attr_accessor :weights
+    attr_accessor :weights, :outputs, :old_outputs
     attr_reader :inputs_count, :outputs_count
 
     def initialize(inputs_count, outputs_count)
@@ -14,7 +14,8 @@ module Neuronet
     end
 
     def predict(inputs)
-      Neuronet::Facades::MatrixFacade.mult(inputs * weights)
+      @old_outputs = @outputs.clone
+      @outputs = Neuronet::Facades::MatrixFacade.mult(inputs * weights)
     end
 
     protected
