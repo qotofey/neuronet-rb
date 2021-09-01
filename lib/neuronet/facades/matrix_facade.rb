@@ -9,5 +9,9 @@ module Neuronet::Facades::MatrixFacade
     def mult(first_matrix, second_matrix)
       first_matrix * second_matrix
     end
+
+    def combine_mult(first_matrix, second_matrix)
+      Matrix.combine(first_matrix, second_matrix) { |a, b| a * b }
+    end
   end
 end
