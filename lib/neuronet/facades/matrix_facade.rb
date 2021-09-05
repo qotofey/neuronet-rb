@@ -13,5 +13,13 @@ module Neuronet::Facades::MatrixFacade
     def combine_mult(first_matrix, second_matrix)
       Matrix.combine(first_matrix, second_matrix) { |a, b| a * b }
     end
+
+    def apply_func(matrix, func)
+      matrix.map { |value| func.call(value) }
+    end
+
+    def elements_count(matrix)
+      matrix.count
+    end
   end
 end
