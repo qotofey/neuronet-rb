@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Neuronet::Facades::MatrixFacade
+module Neuronet::Facades::Matrix
   class << self
     def generate_matrix(rows_count, cols_count)
       Matrix.build(rows_count, cols_count) { rand(-1.0..1.0) }
