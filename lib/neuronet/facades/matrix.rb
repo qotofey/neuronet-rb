@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+#
+# Класс +Neuronet::Facades::Matrix+ является фасадом, инкапусулирующим гем для матричных вывчислений.
+# Таким гемом может быть как стандартный +Matrix+ так и +NMatrix+ из репозитория +SciRuby+.
+#
 module Neuronet::Facades::Matrix
   class << self
     def generate_matrix(rows_count, cols_count)
