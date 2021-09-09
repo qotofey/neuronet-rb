@@ -18,7 +18,7 @@ module Neuronet
 
     def predict(inputs)
       @old_outputs = @outputs.clone
-      @outputs = Neuronet::Facades::Matrix.mult(inputs * self.weights)
+      @outputs = Neuronet::Facades::Matrix.mult(inputs * weights)
     end
 
     protected

@@ -12,6 +12,4 @@ RSpec.describe Neuronet::Facades::Matrix do
   describe '.combine_mult' do
     it {}
   end
-
-
 end

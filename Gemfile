@@ -3,5 +3,5 @@
 source 'https://rubygems.org'
 
 gem 'fasterer'
-gem 'rubocop'
 gem 'rspec', '~> 3.10.0'
+gem 'rubocop'
