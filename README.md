@@ -9,3 +9,17 @@
 ```shell
 $ ruby app.rb
 ```
+
+Фреймворка тестироваия - RSpec
+```shell
+$ rspec
+```
+
+Линтеры - Rubocop и Fasterer
+```shell
+$ rubocop
+
+$ rubocop --require rubocop-performance
+
+$ fasterer
+```
