@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-exec ruby ../app.rb
+exec ruby app.rb
