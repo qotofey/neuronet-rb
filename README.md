@@ -23,3 +23,7 @@ $ rubocop --require rubocop-performance
 
 $ fasterer
 ```
+
+
+Для себя (ссылки на репозитоории гемов):
+* https://github.com/jfelchner/ruby-progressbar/
