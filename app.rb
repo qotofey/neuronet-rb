@@ -15,8 +15,8 @@ learning_progressbar = ProgressBar.create(
   # output: File.open(File::NULL, 'w') # IN TEST ENV
 )
 
-(1..PARTS_OF_WORK).each do |i|
-  sleep(0.1)
+(1..PARTS_OF_WORK).each do |_i|
+  sleep(1)
   learning_progressbar.increment
 end
 
