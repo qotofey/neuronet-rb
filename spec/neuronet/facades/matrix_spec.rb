@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 require 'neuronet/facades'
 
 RSpec.describe Neuronet::Facades::Matrix do
   describe '.generate_matrix' do
-    it {}
+    # it {}
   end
 
   describe '.mult' do
-    it {}
+    # it {}
   end
 
   describe '.combine_mult' do
-    it {}
+    # it {}
   end
 end

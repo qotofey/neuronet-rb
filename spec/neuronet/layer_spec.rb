@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Neuronet::Layer do
   describe '#predict' do
     subject { described_class.new(2, 7) }
