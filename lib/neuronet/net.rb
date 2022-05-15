@@ -9,6 +9,7 @@ module Neuronet
     def initialize(inputs_count, outputs_count, layers_count = 1)
       super(inputs_count, outputs_count)
       @layers_count = layers_count
+
       build_layers
     end
 
