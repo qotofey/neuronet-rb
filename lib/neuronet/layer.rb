@@ -18,7 +18,7 @@ module Neuronet
 
     def predict(inputs)
       @old_outputs = @outputs.clone
-      @outputs = Neuronet::Facades::Matrix.mult(inputs * weights)
+      @outputs = inputs * weights
     end
 
     protected
@@ -30,7 +30,7 @@ module Neuronet
     # Каждому весу присваивается случайное действительное число.
     #
     def generate_weights_matrix(inputs_count, outputs_count)
-      Neuronet::Facades::Matrix.generate_matrix(inputs_count, outputs_count)
+      Matrix.build(inputs_count, outputs_count) { rand(-1.0..1.0) }
     end
   end
 end
